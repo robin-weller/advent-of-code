@@ -1,6 +1,4 @@
-﻿using FluentAssertions;
-
-var lines = File.ReadAllLines("input.txt");
+﻿var lines = File.ReadAllLines("input.txt");
 
 var a = new List<int>();
 var b = new List<int>();
@@ -16,8 +14,6 @@ var taskOneResult = TaskOne(a, b);
 var taskTwoResult = TaskTwo(a, b);
 Console.WriteLine(taskOneResult);
 Console.WriteLine(taskTwoResult);
-taskOneResult.Should().Be(1223326);
-taskTwoResult.Should().Be(21070419);
 return;
 
 int TaskOne(List<int> listA, List<int> listB)
